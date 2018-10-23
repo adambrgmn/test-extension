@@ -21,3 +21,5 @@ don't want that. It will make it look suspicious. I want it to only have the
 I guessing the reason it's not working is due to the fact that creating a new
 tab is asynchronous and when I then try to execute the content script the the
 connection between my click and the script execution is lost.
+
+**If someone knows how to properly handle this please reach out to me!**
