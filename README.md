@@ -14,9 +14,9 @@ script in the newly created tab. And fails...
 
 ## Why it's not working
 
-This can be fixed be extending the `permissions` to cover `<all_urls>`. But I
-don't want that. It will make it look suspicious. I want it to only have the
-`activeTab`-permission.
+This can be fixed be extending the `permissions` to cover
+`["https://*/*", "http://*/*"]`. But I don't want that. It will make it look
+suspicious. I want it to only have the `activeTab`-permission.
 
 I guessing the reason it's not working is due to the fact that creating a new
 tab is asynchronous and when I then try to execute the content script the the
